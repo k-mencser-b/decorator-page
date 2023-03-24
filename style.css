@@ -1,0 +1,274 @@
+.body{
+box-sizing: border-box;
+font-family: 'Source Serif Pro', serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+.header{
+    height: 20rem;
+}
+.kockadoboz{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+    background-color: #DEDDD8 ;
+}
+.kocka-h1{
+    
+    position: relative;
+    height: 5rem; 
+    background-color: #DEDDD8;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 48px;
+    font-weight: bold;
+}
+h3{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.kocka-block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.kocka{
+    position: relative;
+    height: 15rem;
+    background-color: #DEDDD8;  
+}
+.kocka-block{
+    position: relative;
+    height: 50rem;
+    background-color: #DEDDD8;
+    width: 33%;
+    
+}
+
+.vintage {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 70%;
+    text-align: center;
+    /*border: 1px solid black;*/
+
+}
+
+.rusztikus{
+    display: flex;
+    flex-direction: column;
+   
+    padding: auto;
+    
+    text-align: center;
+    width: 70%; 
+   /* border: 1px solid black;*/
+}
+
+.skandinav{
+    display: flex;
+    flex-direction: column;
+    
+   
+    text-align: center;
+    width: 70%;
+   /* border: 1px solid black;*/
+}
+
+    
+/*HERO*/
+.hero{
+    position: relative;
+    width: 100%;
+    height: 90%;
+      
+}
+
+ .header-photo{
+    
+    background-size: cover;
+    background: url(https://i.pinimg.com/236x/4d/7d/65/4d7d65e2c7507cff432824142498672f.jpg) no-repeat center;
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-text{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    line-height: 1rem;
+    margin-left: 0;
+    padding-left: 3rem;
+    background-color: #ffffff;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.btn{
+    background-color: #e7bc3b;
+    color: #312c2c;
+    font-size: 3rem;
+}
+
+
+/*NAVBAR*/
+.navbar{
+    width: 100%;
+    height: 8%;
+    background-color: #DEDDD8;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.navbar-brand{
+    padding-left: 3rem;
+}
+.nav-item{
+    padding-left: 3rem;
+}
+.navbar-toggle{
+    color: #e7bc3b;
+}
+
+
+
+/*PREZENTS*/
+.prezents{
+    position: relative;
+    height: 40rem; 
+    width: 100%;
+}
+.photo-box{
+    height: 35rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.prezents-photo-frame{
+    height: 40rem;
+    /*height: 400px;*/
+    width: 400px;
+    background-size: cover;
+    background: url(https://i.pinimg.com/236x/c4/10/ed/c410ed95679abb59d242fc0b4915c7f4.jpg) no-repeat center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+    
+.prezents-text{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    line-height: 1rem;
+    margin-left: 0;
+    padding-left: 3rem;
+    background-color: #ffffff; 
+}
+
+/*CTA*/
+.cta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: #DEDDD8;
+}
+.cta-block{
+    width: 70%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.button-cta{
+    padding-top: 2rem;
+}
+.button-box{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.cta-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center; 
+}
+
+
+
+.footer{
+    width: 100%;
+    background-color: #DEDDD8; 
+    text-align: center; 
+}
+.fa{
+    color: #e7bc3b;
+    padding-bottom: 2rem;
+}
+
+
+@media (max-width: 768px){
+    .header{
+        height: 40rem;
+    }
+    .header-text{
+        padding-top: 3rem;
+    }
+    .header-photo{
+        padding-bottom: 20rem;
+    }
+    .kockadoboz{
+        padding-bottom: 10rem;
+    }
+    .kocka-1{
+        height: 30rem;
+    }
+    .kocka-2{
+        height: 40rem;
+    }
+    .kocka-3{
+        height: 30rem;
+    }
+    .prezents{
+        height: 70rem;
+    }
+    .prezents-text{
+        height: 30rem;
+        text-align: center;
+    }
+    .photo-box{
+        justify-content: center;
+        height: 25rem;
+        padding-top: 10rem;
+    }
+    .cta{
+        height: 25rem;
+    }
+    .cta-block{
+        height: 70%;
+        padding-top: 4rem;
+    }
+}
+
+
