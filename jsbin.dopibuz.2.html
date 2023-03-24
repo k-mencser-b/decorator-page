@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2023 by k-mencser-b (http://jsbin.com/dopibuz/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+<style id="jsbin-css">
+
+  .body{
+box-sizing: border-box;
+font-family: 'Source Serif Pro', serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+.header{
+    height: 20rem;
+}
+.kockadoboz{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+    background-color: #DEDDD8 ;
+    height: 60rem;
+}
+.kocka-h1{
+    
+    position: relative;
+    height: 5rem; 
+    background-color: #DEDDD8;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 48px;
+    font-weight: bold;
+}
+h3{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.kocka-block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.kocka{
+    position: relative;
+    height: 15rem;
+    background-color: #DEDDD8;  
+}
+.kocka-block{
+    position: relative;
+    height: 50rem;
+    background-color: #DEDDD8;
+    width: 33%;
+    
+}
+
+.vintage {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 70%;
+    text-align: center;
+    /*border: 1px solid black;*/
+
+}
+
+.rusztikus{
+    display: flex;
+    flex-direction: column;
+   
+    padding: auto;
+    
+    text-align: center;
+    width: 70%; 
+   /* border: 1px solid black;*/
+}
+
+.skandinav{
+    display: flex;
+    flex-direction: column;
+    
+   
+    text-align: center;
+    width: 70%;
+   /* border: 1px solid black;*/
+}
+
+    
+/*HERO*/
+.hero{
+    position: relative;
+    width: 100%;
+    height: 90%;
+      
+}
+
+ .header-photo{
+    
+    background-size: cover;
+    background: url(https://i.pinimg.com/236x/4d/7d/65/4d7d65e2c7507cff432824142498672f.jpg) no-repeat center;
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-text{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    line-height: 1rem;
+    margin-left: 0;
+    padding-left: 3rem;
+    background-color: #ffffff;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.btn{
+    background-color: #e7bc3b;
+    color: #312c2c;
+    font-size: 1rem;
+}
+
+
+/*NAVBAR*/
+.navbar{
+    width: 100%;
+    height: 8%;
+    background-color: #DEDDD8;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.navbar-brand{
+    padding-left: 3rem;
+}
+.nav-item{
+    padding-left: 3rem;
+}
+
+
+
+
+/*PREZENTS*/
+.prezents{
+    position: relative;
+    height: 40rem; 
+    width: 100%;
+}
+.photo-box{
+    height: 35rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.prezents-photo-frame{
+    height: 40rem;
+    /*height: 400px;*/
+    width: 400px;
+    background-size: cover;
+    background: url(https://i.pinimg.com/236x/c4/10/ed/c410ed95679abb59d242fc0b4915c7f4.jpg) no-repeat center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+    
+.prezents-text{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    line-height: 1rem;
+    margin-left: 0;
+    padding-left: 3rem;
+    background-color: #ffffff; 
+}
+
+/*CTA*/
+.cta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: #DEDDD8;
+}
+.cta-block{
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.button-cta{
+    padding-top: 1rem;
+  font-size: 1rem;
+}
+.button-box{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+  padding-right: 2rem;
+  padding-left: 3rem;
+}
+.cta-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center; 
+}
+
+
+
+.footer{
+    width: 100%;
+    background-color: #DEDDD8; 
+    text-align: center; 
+}
+.fa{
+    color: #e7bc3b;
+    padding-bottom: 2rem;
+}
+
+
+@media (max-width: 768px){
+    .header{
+        height: 40rem;
+    }
+    .header-text{
+        padding-top: 3rem;
+    }
+    .header-photo{
+        padding-bottom: 20rem;
+    }
+    .kockadoboz{
+        padding-bottom: 10rem;
+    }
+    .kocka-1{
+        height: 30rem;
+    }
+    .kocka-2{
+        height: 40rem;
+    }
+    .kocka-3{
+        height: 30rem;
+    }
+    .prezents{
+        height: 70rem;
+    }
+    .prezents-text{
+        height: 30rem;
+    }
+    .photo-box{
+        justify-content: center;
+        height: 25rem;
+        padding-top: 10rem;
+    }
+    .cta{
+        height: 25rem;
+    }
+    .cta-block{
+        height: 70%;
+        padding-top: 4rem;
+    }
+}
+
+
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+     <div class="row row-cols-1">    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">PEPPER DESING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Szolgáltatások<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Referenciák</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rólunk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+
+    
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 header">
+        <div class="col">
+          
+            <div class="header-text">
+              <div><h1>Álmaid otthona stresszmentesen</h1></div>
+              <div><p>Melletted leszünk a lakásod vagy házad felújításának minden lépésénél,
+                 a tervezéstől az átadásig.</p></div>
+              <div><button class=" btn btn-warning">IDŐPONTOT KÉREK!</button></div>
+            </div>
+        </div>
+        <div class="col header-photo">
+        </div>
+      </div>
+  
+    <div class="row row-cols-1 kocka">
+      <div class="col kocka-h1"><h1>Keress bátran, ha te is hasonlóra vágysz</h1></div>
+    </div> 
+
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 kockadoboz">
+      <div class="col  kocka-block kocka-1">
+        <div class="rusztikus">
+          <div class="rusztikus-photo">
+            <img class="img-responsive" src="https://i.pinimg.com/236x/2e/a5/55/2ea55535998780dc3561d6bd0938c6d5.jpg" alt="őreg szék">
+          </div>
+          <div class="rusztikus-text">
+            <h3>Rusztikus</h3>
+            <p>Természetesség és letisztultság, melynek alapja a fa és a kő anyagok használata.
+              A nyers, szerény anyagok és a természetes színek jellemzik ezt a meghitt és otthonos stílust.</p>
+           </div>
+        </div>
+      </div>
+
+      <div class="col kocka-block kocka-2">
+        <div class="vintage">
+          <div class="vintage-photo">
+            <img class="img-responsive" src="https://i.pinimg.com/236x/da/b2/1e/dab21e822754a46b0aab7422daca253d.jpg" alt="csajos sámli">
+          </div>
+          <div class="vintage-text">
+            <h3>Vintage</h3>
+            <p>A vintage stílus különlegessége, hogy tükröt mutat a emberének az ízlésről, 
+            a látásmódról, a világról. Ez egy életérzés, amelyben előtérbe kerülnek a vágyaid és elképzeléseid, 
+            és egy belső késztetés, hogy a régiből létrehozz valami újat.</p>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="col kocka-block kocka-3">
+        <div class="skandinav">
+          <div class="skandinav-photo">
+            <img class="img-responsive" src="https://i.pinimg.com/236x/fa/ca/72/faca72441b14f230968f83856eac0a93.jpg" alt="pinf fotel">
+          </div>
+          <div class="skandinav-text">
+            <h3>Skandináv</h3>
+            <p>Minimalist, funkciónákis, de mégis megérint. Világos színek, 
+              természetes anyagok ée a geometriai formák, amik a letisztult és elegáns otthonokat teremtik meg.
+            A természetes fény és a térhatás kiemelése a legfontosabb elemei ennek a stílusnak.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 prezents">
+        <div class="col photo-box">
+          <div class="prezents-photo-frame">
+          </div>
+        </div>
+        <div class="col">
+          <div class="prezents-text">
+            <div><h1>Ki vagyok én?</h1></div>
+            <div><p>Minden a Sims-szel kezdődött...</p></div>
+            <div><p>Engem nem a karierr, a barátok vagy a szerelem keresése érdekelt,
+              hanem, hogy minél otthonosabb és szebb házat építsek fel a kis Sim családjaimnak.
+            </p></div>
+            <div><p>Amikor a való életben pályaválasztásra került sor, tudtam,
+               hogy ezt szeretném csinálni egész életemben. Mivel Magyarországon nem találtam 
+              megfelelő iskolát, Firenzébe mentem tanulni. Miután végeztem belevágtam a munkába és ma 
+            már tőbb mint 20 lakás és ház tervezésében és kivitelezésében vettem részt.</p></div>
+            <div><p>Beszéjünk és nézzük meg,hogy tudnánk-e jól együtt dolgozni</p></div>
+            <div><button class=" btn btn-warning">IDŐPONTOT KÉREK!</button></div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col cta">
+          <div class=" container cta-block">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col cta-text">
+              <div><h4>Foglalj időpontot konzultációra!</h4></div>
+              <div><p>Hiszek abban, hogy ha egymásnak teremtettek minket, akkor lesz igazán jó a project.
+                Derítsük ki, így van-e.</p></div>
+            </div>
+            <div class="button-box"><button class="col btn btn-warning button-cta">Kattints most!</button></div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col footer">
+          <p>@ 2023-Pepper Desing Kft. - Minden jog fenntartva</p>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+</html>
